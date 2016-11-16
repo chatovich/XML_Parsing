@@ -1,0 +1,1 @@
+16.11.2016 21:42:51 [main] ERROR com.chatovich.xml.sax.BuilderSAX - BuilderSAX i/o mistake java.io.FileNotFoundException: D:\mine\xml\files\candies.xml (Системе не удается найти указанный путь)

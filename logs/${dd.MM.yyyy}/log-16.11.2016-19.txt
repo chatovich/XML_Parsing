@@ -1,0 +1,2 @@
+16.11.2016 19:40:28 [main] ERROR com.chatovich.xml.validator.ValidationXSD - ValidationXSD Validation file/candies.xml failed cvc-id.2: There are multiple occurrences of ID value 'sugar'.
+16.11.2016 19:41:06 [main] INFO  com.chatovich.xml.validator.ValidationXSD - ValidationXSD file/candies.xml is valid.

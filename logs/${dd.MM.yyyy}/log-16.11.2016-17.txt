@@ -1,0 +1,2 @@
+16.11.2016 17:13:01 [main] ERROR com.chatovich.xml.validator.ValidationXSD - ValidationXSD Validation file/candies.xml failed cvc-minInclusive-valid: Value '0' is not facet-valid with respect to minInclusive '1' for type 'positiveInteger'.
+16.11.2016 17:14:21 [main] INFO  com.chatovich.xml.validator.ValidationXSD - ValidationXSD file/candies.xml is valid.

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.chatovich.com/candies"
+          xsi:schemaLocation="http://www.chatovich.com/candies">
+        <caramel name="barbaris" flavor="fruit">
+            <calories>380</calories>
+            <production>Belarus</production>
+            <ingridients>
+                <ingridient name="sugar"
+                            weight="66"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="fructose"
+                            weight="9"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="4"/>
+                <value name="carbohydrate"
+                       weight="77"/>
+                <value name="fat"
+                       weight="8"/>
+            </nutritional>
+        </caramel>
+
+        <caramel name="lizun" flavor="fruit">
+            <calories>380</calories>
+            <production>Belarus</production>
+            <ingridients>
+                <ingridient name="sugar"
+                            weight="66"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="fructose"
+                            weight="9"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="4"/>
+                <value name="carbohydrate"
+                       weight="77"/>
+                <value name="fat"
+                       weight="8"/>
+            </nutritional>
+        </caramel>
+
+        <caramel name="slivka" flavor="cream">
+            <calories>380</calories>
+            <production>Ucraine</production>
+            <ingridients>
+                <ingridient name="sugar"
+                            weight="66"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="fructose"
+                            weight="9"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="4"/>
+                <value name="carbohydrate"
+                       weight="77"/>
+                <value name="fat"
+                       weight="8"/>
+            </nutritional>
+        </caramel>
+
+        <caramel name="uletnie" flavor="chocolate">
+            <calories>380</calories>
+            <production>Belarus</production>
+            <ingridients>
+                <ingridient name="sugar"
+                            weight="66"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="fructose"
+                            weight="9"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="4"/>
+                <value name="carbohydrate"
+                       weight="77"/>
+                <value name="fat"
+                       weight="8"/>
+            </nutritional>
+        </caramel>
+
+        <caramel name="rachki" flavor="cream">
+            <calories>380</calories>
+            <production>Russia</production>
+            <ingridients>
+                <ingridient name="sugar"
+                            weight="66"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="fructose"
+                            weight="9"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="4"/>
+                <value name="carbohydrate"
+                       weight="77"/>
+                <value name="fat"
+                       weight="8"/>
+            </nutritional>
+        </caramel>
+
+        <caramel name="top" flavor="mint">
+            <calories>380</calories>
+            <production>Russia</production>
+            <ingridients>
+                <ingridient name="sugar"
+                            weight="66"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="fructose"
+                            weight="9"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="4"/>
+                <value name="carbohydrate"
+                       weight="77"/>
+                <value name="fat"
+                       weight="8"/>
+            </nutritional>
+        </caramel>
+
+        <chocolate name="mishki">
+            <calories>540</calories>
+            <production>Belarus</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="dark"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                        weight="55"/>
+                <value name="fat"
+                        weight="40"/>
+            </nutritional>
+            <filling>chocolate</filling>
+        </chocolate>
+
+        <chocolate name="rotfront">
+            <calories>540</calories>
+            <production>Ucraine</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+                <ingridient name="waffel"
+                            weight="15"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>waffel</filling>
+        </chocolate>
+
+        <chocolate name="grilyazh">
+            <calories>540</calories>
+            <production>Belarus</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+                <ingridient name="nuts"
+                            weight="15"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>nougat</filling>
+        </chocolate>
+
+        <chocolate name="alenka">
+            <calories>540</calories>
+            <production>Belarus</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+                <ingridient name="nuts"
+                            weight="15"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>nuts</filling>
+        </chocolate>
+
+        <chocolate name="sorvanec">
+            <calories>500</calories>
+            <production>Belarus</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>cream</filling>
+        </chocolate>
+
+        <chocolate name="lindor">
+            <calories>560</calories>
+            <production>Switzerland</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>chocolate</filling>
+        </chocolate>
+
+        <chocolate name="ponko-sweets">
+            <calories>540</calories>
+            <production>Russia</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+                <ingridient name="cognak"
+                            weight="5"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>alcohol</filling>
+        </chocolate>
+
+        <chocolate name="toffifee">
+            <calories>540</calories>
+            <production>Germany</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+                <ingridient name="nuts"
+                            weight="15"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>nuts</filling>
+        </chocolate>
+
+        <chocolate name="mini-shtuchka">
+            <calories>510</calories>
+            <production>Ucraine</production>
+            <ingridients>
+                <ingridient name="chocolate"
+                            weight="60"
+                            type="milk"/>
+                <ingridient name="sugar"
+                            weight="20"/>
+                <ingridient name="vanillin"
+                            weight="3"/>
+                <ingridient name="water"/>
+            </ingridients>
+            <nutritional>
+                <value name="protein"
+                       weight="5"/>
+                <value name="carbohydrate"
+                       weight="55"/>
+                <value name="fat"
+                       weight="40"/>
+            </nutritional>
+            <filling>milk</filling>
+        </chocolate>
+
+    </candies>

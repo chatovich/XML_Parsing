@@ -1,0 +1,1 @@
+16.11.2016 16:59:10 [main] INFO  com.chatovich.xml.validator.ValidationXSD - ValidationXSD file/candies.xml is valid.
