@@ -33,4 +33,10 @@ public class Caramel extends Candy {
     public void setFilling(FillingType flavor) {
         throw new RuntimeException("Caramel doesn't have a filling");
     }
+
+    @Override
+     public String toString(){
+        return "name: "+super.getName()+", flavor: "+this.flavor+", ccal: "+super.getCcal()+", production: "+super.getProduction()+
+                ", ingridients: " +super.getIngridients()+ ", nutritional values: "+super.getNutritionals();
+    }
 }

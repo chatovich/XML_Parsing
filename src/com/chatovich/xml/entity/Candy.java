@@ -75,6 +75,7 @@ public abstract class Candy {
 
     @Override
     public String toString(){
-        return "name: "+name+", ccal: "+ccal+", production: "+production+", ingr: "+ingridients+", nutr: "+nutritionals;
+        return "name: "+name+", ccal: "+ccal+", production: "+production+", ingridients: "+ingridients+
+                ", nutritional values: "+nutritionals;
     }
 }

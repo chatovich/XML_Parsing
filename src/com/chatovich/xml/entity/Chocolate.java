@@ -33,4 +33,10 @@ public class Chocolate extends Candy{
     public void setFilling(FillingType filling) {
         this.fillng = filling;
     }
+
+    @Override
+    public String toString(){
+        return "name: "+super.getName()+", filling: "+this.fillng+", ccal: "+super.getCcal()+", production: "+super.getProduction()+
+                ", ingridients: " +super.getIngridients()+ ", nutritional values: "+super.getNutritionals();
+    }
 }

@@ -139,8 +139,7 @@
             <production>Belarus</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="dark"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -163,8 +162,7 @@
             <production>Ucraine</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -189,8 +187,7 @@
             <production>Belarus</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -215,8 +212,7 @@
             <production>Belarus</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -241,8 +237,7 @@
             <production>Belarus</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -265,8 +260,7 @@
             <production>Switzerland</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -289,8 +283,7 @@
             <production>Russia</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -315,8 +308,7 @@
             <production>Germany</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"
@@ -341,8 +333,7 @@
             <production>Ucraine</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"
-                            type="milk"/>
+                            weight="60"/>
                 <ingridient name="sugar"
                             weight="20"/>
                 <ingridient name="vanillin"

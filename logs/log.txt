@@ -1,1 +1,6 @@
-16.11.2016 21:42:51 [main] ERROR com.chatovich.xml.sax.BuilderSAX - BuilderSAX i/o mistake java.io.FileNotFoundException: D:\mine\xml\files\candies.xml (Системе не удается найти указанный путь)
+16.11.2016 21:42:51 [main] ERROR com.chatovich.xml.sax.RunnerSAX - BuilderSAX i/o mistake java.io.FileNotFoundException: D:\mine\xml\files\candies.xml (Системе не удается найти указанный путь)
+16.11.2016 22:17:27 [main] INFO  com.chatovich.xml.sax.RunnerSAX - RunnerSAX Caramel candies:
+16.11.2016 22:17:27 [main] INFO  com.chatovich.xml.sax.RunnerSAX - RunnerSAX Chocolate candies:
+16.11.2016 22:21:22 [main] INFO  com.chatovich.xml.sax.RunnerSAX - RunnerSAX Caramel candies:
+16.11.2016 22:21:22 [main] INFO  com.chatovich.xml.sax.RunnerSAX - RunnerSAX Chocolate candies:
+16.11.2016 22:23:25 [main] INFO  com.chatovich.xml.validator.ValidationXSD - ValidationXSD file/candies.xml is valid.
