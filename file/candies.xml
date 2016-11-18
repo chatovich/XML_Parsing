@@ -29,18 +29,18 @@
             <production>Belarus</production>
             <ingridients>
                 <ingridient name="sugar"
-                            weight="66"/>
+                            weight="6"/>
                 <ingridient name="vanillin"
-                            weight="3"/>
+                            weight="4"/>
                 <ingridient name="fructose"
-                            weight="9"/>
+                            weight="5"/>
                 <ingridient name="water"/>
             </ingridients>
             <nutritional>
                 <value name="protein"
-                       weight="4"/>
+                       weight="5"/>
                 <value name="carbohydrate"
-                       weight="77"/>
+                       weight="87"/>
                 <value name="fat"
                        weight="8"/>
             </nutritional>
@@ -51,20 +51,20 @@
             <production>Ucraine</production>
             <ingridients>
                 <ingridient name="sugar"
-                            weight="66"/>
+                            weight="63"/>
                 <ingridient name="vanillin"
                             weight="3"/>
                 <ingridient name="fructose"
-                            weight="9"/>
+                            weight="11"/>
                 <ingridient name="water"/>
             </ingridients>
             <nutritional>
                 <value name="protein"
-                       weight="4"/>
+                       weight="14"/>
                 <value name="carbohydrate"
-                       weight="77"/>
+                       weight="79"/>
                 <value name="fat"
-                       weight="8"/>
+                       weight="5"/>
             </nutritional>
         </caramel>
 
@@ -95,20 +95,20 @@
             <production>Russia</production>
             <ingridients>
                 <ingridient name="sugar"
-                            weight="66"/>
+                            weight="46"/>
                 <ingridient name="vanillin"
-                            weight="3"/>
+                            weight="6"/>
                 <ingridient name="fructose"
-                            weight="9"/>
+                            weight="11"/>
                 <ingridient name="water"/>
             </ingridients>
             <nutritional>
                 <value name="protein"
-                       weight="4"/>
-                <value name="carbohydrate"
-                       weight="77"/>
-                <value name="fat"
                        weight="8"/>
+                <value name="carbohydrate"
+                       weight="86"/>
+                <value name="fat"
+                       weight="4"/>
             </nutritional>
         </caramel>
 
@@ -162,22 +162,22 @@
             <production>Ucraine</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"/>
+                            weight="65"/>
                 <ingridient name="sugar"
-                            weight="20"/>
+                            weight="25"/>
                 <ingridient name="vanillin"
-                            weight="3"/>
+                            weight="5"/>
                 <ingridient name="water"/>
                 <ingridient name="waffel"
-                            weight="15"/>
+                            weight="14"/>
             </ingridients>
             <nutritional>
                 <value name="protein"
-                       weight="5"/>
+                       weight="6"/>
                 <value name="carbohydrate"
-                       weight="55"/>
+                       weight="53"/>
                 <value name="fat"
-                       weight="40"/>
+                       weight="48"/>
             </nutritional>
             <filling>waffel</filling>
         </chocolate>
@@ -187,22 +187,22 @@
             <production>Belarus</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"/>
+                            weight="50"/>
                 <ingridient name="sugar"
-                            weight="20"/>
+                            weight="30"/>
                 <ingridient name="vanillin"
-                            weight="3"/>
+                            weight="7"/>
                 <ingridient name="water"/>
                 <ingridient name="nuts"
-                            weight="15"/>
+                            weight="11"/>
             </ingridients>
             <nutritional>
                 <value name="protein"
-                       weight="5"/>
+                       weight="8"/>
                 <value name="carbohydrate"
-                       weight="55"/>
+                       weight="51"/>
                 <value name="fat"
-                       weight="40"/>
+                       weight="41"/>
             </nutritional>
             <filling>nougat</filling>
         </chocolate>
@@ -237,20 +237,20 @@
             <production>Belarus</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"/>
+                            weight="46"/>
                 <ingridient name="sugar"
-                            weight="20"/>
+                            weight="25"/>
                 <ingridient name="vanillin"
-                            weight="3"/>
+                            weight="4"/>
                 <ingridient name="water"/>
             </ingridients>
             <nutritional>
                 <value name="protein"
-                       weight="5"/>
+                       weight="6"/>
                 <value name="carbohydrate"
-                       weight="55"/>
+                       weight="53"/>
                 <value name="fat"
-                       weight="40"/>
+                       weight="43"/>
             </nutritional>
             <filling>cream</filling>
         </chocolate>
@@ -283,22 +283,22 @@
             <production>Russia</production>
             <ingridients>
                 <ingridient name="chocolate"
-                            weight="60"/>
+                            weight="64"/>
                 <ingridient name="sugar"
-                            weight="20"/>
+                            weight="24"/>
                 <ingridient name="vanillin"
-                            weight="3"/>
+                            weight="6"/>
                 <ingridient name="water"/>
                 <ingridient name="cognak"
                             weight="5"/>
             </ingridients>
             <nutritional>
                 <value name="protein"
-                       weight="5"/>
+                       weight="7"/>
                 <value name="carbohydrate"
-                       weight="55"/>
+                       weight="48"/>
                 <value name="fat"
-                       weight="40"/>
+                       weight="43"/>
             </nutritional>
             <filling>alcohol</filling>
         </chocolate>

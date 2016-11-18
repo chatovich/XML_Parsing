@@ -1,4 +1,4 @@
-package com.chatovich.xml.sax;
+package com.chatovich.xml.builder;
 
 /**
  * Created by Yultos_ on 16.11.2016
@@ -7,10 +7,17 @@ public enum CandyEnum {
     
     CALORIES ("calories"),
     PRODUCTION ("production"),
+    FILLING ("filling"),
     INGRIDIENTS ("ingridients"),
     NUTRITIONAL ("nutritional"),
-    FILLING ("filling"),
-    CANDIES ("candies");
+    CANDIES ("candies"),
+    CARAMEL ("caramel"),
+    CHOCOLATE ("chocolate"),
+    INGRIDIENT ("ingridient"),
+    VALUE ("value"),
+    NAME ("name"),
+    FLAVOR ("flavor"),
+    WEIGHT ("weight");
 
 
     private String value;

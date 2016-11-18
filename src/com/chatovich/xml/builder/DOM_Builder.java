@@ -1,4 +1,4 @@
-package com.chatovich.xml.dom;
+package com.chatovich.xml.builder;
 
 import com.chatovich.xml.entity.*;
 import com.chatovich.xml.type.FillingType;
@@ -18,12 +18,11 @@ import java.util.Set;
 /**
  * Created by Yultos_ on 16.11.2016
  */
-public class BuilderDOM {
+public class DOM_Builder extends AbstractCandyBuilder {
 
     private DocumentBuilder docBuilder;
-    private CandyShop candyShop;
-    public BuilderDOM() {
-        candyShop = new CandyShop();
+    public DOM_Builder() {
+        super();
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             docBuilder = factory.newDocumentBuilder();
@@ -31,10 +30,8 @@ public class BuilderDOM {
             System.err.println("Parser configuration error: " + e);
         }
     }
-    public Set<Candy> getCandies() {
-        return candyShop.getCandies();
-    }
 
+    @Override
     public void buildSetCandies(String fileName) {
         Document doc = null;
         try {
@@ -66,8 +63,9 @@ public class BuilderDOM {
         }
         candy.setCcal(Integer.parseInt(getElementTextContent(candyElement, "calories")));
         candy.setProduction(getElementTextContent(candyElement, "production"));
-        if (!candyElement.getAttribute("filling").isEmpty()){
-            candy.setFilling(FillingType.valueOf(candyElement.getAttribute("filling").toUpperCase()));
+
+        if (!getElementTextContent(candyElement, "filling").isEmpty()){
+            candy.setFilling(FillingType.valueOf(getElementTextContent(candyElement, "filling").toUpperCase()));
         }
 
         NodeList ingridientsList = candyElement.getElementsByTagName("ingridient");
@@ -82,11 +80,17 @@ public class BuilderDOM {
 
         return candy;
     }
-    // получение текстового содержимого тега
+
     private static String getElementTextContent(Element element, String elementName) {
         NodeList nList = element.getElementsByTagName(elementName);
-        Node node = nList.item(0);
-        return node.getTextContent();
+        Node node;
+        if (nList.getLength()>0) {
+            node = nList.item(0);
+            return node.getTextContent();
+        } else {
+            return "";
+        }
+
     }
 
     private Ingridient buildIngridients(Element element){

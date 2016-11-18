@@ -1,4 +1,4 @@
-package com.chatovich.xml.sax;
+package com.chatovich.xml.builder;
 
 import com.chatovich.xml.entity.*;
 import com.chatovich.xml.type.FillingType;
@@ -6,6 +6,7 @@ import com.chatovich.xml.type.FlavorType;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.util.EnumSet;
 import java.util.Set;
 
 /**
@@ -16,40 +17,54 @@ public class CandyHandler extends DefaultHandler {
     private Candy current;
     private CandyEnum currentEnum;
     private CandyShop candyShop = new CandyShop();
+    private EnumSet<CandyEnum> withText;
 
+    public CandyHandler() {
+        withText = EnumSet.range(CandyEnum.CALORIES, CandyEnum.FILLING);
+    }
 
     public void startElement(String uri, String localName, String qName, Attributes attrs) {
 
-        switch (localName){
-            case "caramel":{
+        currentEnum = CandyEnum.valueOf(localName.toUpperCase());
+        switch (currentEnum){
+            case CARAMEL:{
                 current = new Caramel();
                 current.setName(attrs.getValue(0));
                 current.setFlavor(FlavorType.valueOf(attrs.getValue(1).toUpperCase()));
+                currentEnum=null;
                 break;
             }
-            case "chocolate":{
+            case CHOCOLATE:{
                 current = new Chocolate();
                 current.setName(attrs.getValue(0));
+                currentEnum=null;
                 break;
             }
-            case "ingridient":{
+            case INGRIDIENT:{
                 Ingridient ingridient = new Ingridient();
                 ingridient.setName(attrs.getValue(0));
                 if (attrs.getLength()>1){
                     ingridient.setWeight(Integer.parseInt(attrs.getValue(1)));
                 }
                 current.addIngridient(ingridient);
+                currentEnum=null;
                 break;
             }
-            case "value":{
+            case VALUE:{
                 Ingridient ingridient = new Ingridient();
                 ingridient.setName(attrs.getValue(0));
                 ingridient.setWeight(Integer.parseInt(attrs.getValue(1)));
                 current.addNutritional(ingridient);
+                currentEnum=null;
                 break;
             }
             default:{
-                currentEnum = CandyEnum.valueOf(localName.toUpperCase());
+                CandyEnum temp = CandyEnum.valueOf(localName.toUpperCase());
+                if (withText.contains(temp)){
+                    currentEnum = temp;
+                } else{
+                    currentEnum=null;
+                }
             }
         }
 
@@ -81,7 +96,7 @@ public class CandyHandler extends DefaultHandler {
     }
 
     public void endElement(String uri, String localName, String qName) {
-        if ("caramel".equals(localName)||"chocolate".equals(localName)) {
+        if (CandyEnum.CARAMEL.getValue().equals(localName)||CandyEnum.CHOCOLATE.getValue().equals(localName)) {
             candyShop.addCandy(current);
         }
     }
@@ -96,16 +111,9 @@ public class CandyHandler extends DefaultHandler {
                 case PRODUCTION:
                     current.setProduction(s);
                     break;
-                case INGRIDIENTS:
-                    break;
-                case NUTRITIONAL:
-                    break;
                 case FILLING:
                     current.setFilling(FillingType.valueOf(s.toUpperCase()));
                     break;
-                case CANDIES:
-                    break;
-
                 default:throw new EnumConstantNotPresentException(
                         currentEnum.getDeclaringClass(), currentEnum.name());
             }
