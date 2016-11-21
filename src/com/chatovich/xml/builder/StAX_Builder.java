@@ -6,6 +6,9 @@ import com.chatovich.xml.entity.Chocolate;
 import com.chatovich.xml.entity.Ingridient;
 import com.chatovich.xml.type.FillingType;
 import com.chatovich.xml.type.FlavorType;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
@@ -21,6 +24,7 @@ import java.io.IOException;
  */
 public class StAX_Builder extends AbstractCandyBuilder {
 
+    final static Logger LOGGER = LogManager.getLogger(StAX_Builder.class);
     private XMLInputFactory inputFactory;
     public StAX_Builder() {
         super();
@@ -46,15 +50,15 @@ public class StAX_Builder extends AbstractCandyBuilder {
                 }
             }
         } catch (XMLStreamException ex) {
-            System.err.println("StAX parsing error! " + ex.getMessage());
+            LOGGER.log(Level.ERROR, "StAX error "+ ex.getMessage());
         } catch (FileNotFoundException ex) {
-            System.err.println("File " + fileName + " not found! " + ex);
+            LOGGER.log(Level.ERROR, "file not found "+ ex);
         } finally {
             try {if (inputStream != null) {
                 inputStream.close();
             }
             } catch (IOException e) {
-                System.err.println("Impossible close file "+fileName+" : "+e);
+                LOGGER.log(Level.ERROR, "impossible to close file "+ e);
             }
         }
     }

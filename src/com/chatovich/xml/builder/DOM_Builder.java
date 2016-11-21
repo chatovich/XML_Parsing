@@ -3,6 +3,9 @@ package com.chatovich.xml.builder;
 import com.chatovich.xml.entity.*;
 import com.chatovich.xml.type.FillingType;
 import com.chatovich.xml.type.FlavorType;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -20,6 +23,7 @@ import java.util.Set;
  */
 public class DOM_Builder extends AbstractCandyBuilder {
 
+    final static Logger LOGGER = LogManager.getLogger(DOM_Builder.class);
     private DocumentBuilder docBuilder;
     public DOM_Builder() {
         super();
@@ -27,7 +31,7 @@ public class DOM_Builder extends AbstractCandyBuilder {
         try {
             docBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            System.err.println("Parser configuration error: " + e);
+            LOGGER.log(Level.ERROR, "Parser configuration error :"+e);
         }
     }
 
@@ -50,9 +54,9 @@ public class DOM_Builder extends AbstractCandyBuilder {
                 candyShop.addCandy(buildCandy(chocolateElement, chocolate));
             }
         } catch (IOException e) {
-            System.err.println("File error or I/O error: " + e);
+            LOGGER.log(Level.ERROR, "I/O problem "+ e);
         } catch (SAXException e) {
-            System.err.println("Parsing failure: " + e);
+            LOGGER.log(Level.ERROR, "parsing failure "+ e);
         }
     }
 

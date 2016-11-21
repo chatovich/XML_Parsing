@@ -1,17 +1,8 @@
 package com.chatovich.xml.runner;
 
-import com.chatovich.xml.builder.AbstractCandyBuilder;
-import com.chatovich.xml.builder.DOM_Builder;
-import com.chatovich.xml.entity.Candy;
-import com.chatovich.xml.entity.Caramel;
-import com.chatovich.xml.entity.Chocolate;
-import com.chatovich.xml.factory.CandyBuilderFactory;
-import com.chatovich.xml.type.ParserType;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import java.util.Set;
+import com.chatovich.xml.factory.CandyBuilderFactory;
+
 
 /**
  * Created by Yultos_ on 16.11.2016

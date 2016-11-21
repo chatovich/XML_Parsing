@@ -15,8 +15,8 @@ import java.io.IOException;
 public class SAX_Builder extends AbstractCandyBuilder {
 
     final static Logger LOGGER = LogManager.getLogger(SAX_Builder.class);
-    CandyHandler candyHandler;
-    XMLReader reader;
+    private CandyHandler candyHandler;
+    private XMLReader reader;
 
     public SAX_Builder(){
         super();
@@ -35,9 +35,9 @@ public class SAX_Builder extends AbstractCandyBuilder {
         try {
             reader.parse(fileName);
         } catch (SAXException e) {
-            System.err.print("ошибка SAX парсера: " + e);
+            LOGGER.log(Level.ERROR, "SAX problem "+ e);
         } catch (IOException e) {
-            System.err.print("ошибка I/О потока: " + e);
+            LOGGER.log(Level.ERROR, "I/O problem "+ e);
         }
         candyShop.getCandies().addAll(candyHandler.getCandyShop());
 

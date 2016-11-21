@@ -25,24 +25,22 @@ public class ValidationXSD {
 
     public static void main(String[ ] args) {
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
-        String fileName = FILE_NAME;
-        String schemaName = SCHEMA_NAME;
         SchemaFactory factory = SchemaFactory.newInstance(language);
-        File schemaLocation = new File(schemaName);
+        File schemaLocation = new File(SCHEMA_NAME);
         try {
             // создание схемы
             Schema schema = factory.newSchema(schemaLocation);
             // создание валидатора на основе схемы
             Validator validator = schema.newValidator();
             // проверка документа
-            Source source = new StreamSource(fileName);
+            Source source = new StreamSource(FILE_NAME);
             validator.validate(source);
-            LOGGER.log(Level.INFO, fileName + " is valid.");
+            LOGGER.log(Level.INFO, FILE_NAME + " is valid.");
         } catch (SAXException e) {
-            LOGGER.log(Level.ERROR, "Validation "+ fileName + " failed "
+            LOGGER.log(Level.ERROR, "Validation "+ FILE_NAME + " failed "
                     + e.getMessage() );
         } catch (IOException e) {
-            LOGGER.log(Level.ERROR, fileName + " is not valid:"
+            LOGGER.log(Level.ERROR, FILE_NAME + " is not valid:"
                     + e.getMessage());
         }
     }

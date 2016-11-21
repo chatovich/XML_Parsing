@@ -68,31 +68,6 @@ public class CandyHandler extends DefaultHandler {
             }
         }
 
-//        if ("caramel".equals(localName)) {
-//            current = new Caramel();
-//            current.setName(attrs.getValue(0));
-//            current.setFlavor(FlavorType.valueOf(attrs.getValue(1).toUpperCase()));
-//        }
-//        if ("chocolate".equals(localName)) {
-//            current = new Chocolate();
-//            current.setName(attrs.getValue(0));
-//        }
-//        if ("ingridient".equals(localName)) {
-//            Ingridient ingridient = new Ingridient();
-//            ingridient.setName(attrs.getValue(0));
-//            ingridient.setWeight(Integer.parseInt(attrs.getValue(1)));
-//            current.addIngridient(ingridient);
-//        }
-//        if ("nutritional".equals(localName)) {
-//            Ingridient ingridient = new Ingridient();
-//            ingridient.setName(attrs.getValue(0));
-//            ingridient.setWeight(Integer.parseInt(attrs.getValue(1)));
-//            current.addNutritional(ingridient);
-//        }
-//
-//        else {
-//            currentEnum = CandyEnum.valueOf(localName.toUpperCase());
-//        }
     }
 
     public void endElement(String uri, String localName, String qName) {
